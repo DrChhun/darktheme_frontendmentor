@@ -8,8 +8,9 @@ body {
     background-color: hsl(218, 28%, 13%);
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6,p,a,button,input {
     color: white;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .nav {
@@ -60,6 +61,13 @@ h1,h2,h3,h4,h5,h6,p {
 .content__row2 {
     display: flex;
     text-align: center;
+    margin-top: 3.5rem;
+}
+
+.content p {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
 }
 
 /* stay part */
@@ -70,18 +78,58 @@ h1,h2,h3,h4,h5,h6,p {
     padding: 3rem 5rem;
 }
 
+.stay__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stay__content h1 {
+    font-size: 3rem;
+    width: 60%;
+}
+
+.stay__content p {
+    margin-top: 1rem;
+}
+
 /* quote part */
 
 .quote {
     display: flex;
+    justify-content: space-between;
     margin-top: 10rem;
     padding: 3rem 5rem;
+    background-image: url(images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: 10px;
 }
 
 .quote__box1,
 .quote__box2,
 .quote__box3 {
-    width: 33%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 31%;
+    background-color: #fff;
+}
+
+.quote__txt {
+    color: #1b1b1b;
+}
+
+.quote__box1__profile,
+.quote__box2__profile,
+.quote__box3__profile {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.quote img {
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 1.5rem;
 }
 
 /* get card part */
@@ -90,13 +138,47 @@ h1,h2,h3,h4,h5,h6,p {
     width: 70%;
     margin: 0 auto;
     margin-top: 10rem;
+    padding: 5rem;
+    border-radius: 10px;
+    position: relative;
+    top: 150px;
+    background-color: hsl(219, 30%, 18%);
+}
+
+.get h1,h3 {
+    color: #fff;
+}
+
+.get h3 {
+    margin-top: 1rem;
+}
+
+.get__input {
+    margin-top: 1rem;
+}
+
+.get__input input {
+    width: 75%;
+    height: 3rem;
+    border-radius: 25px;
+    color: #1b1b1b;
+    padding: 1rem;
+}
+
+.get__input button {
+    width: 20%;
+    height: 3rem;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color:hsl(176, 68%, 64%) ;
 }
 
 /* footer part */
 
 .footer {
-    padding: 3rem 5rem;
+    padding: 8rem 5rem 5rem;
     margin-top: 5rem;
+    background-color: hsl(217, 28%, 15%);
 }
 
 .footer__about {
