@@ -13,15 +13,37 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-.nav {
+.nav,
+.nav__link ul,
+.intro,
+.content__row1,
+.content__row2,
+.stay,
+.stay__content,
+.quote__box1__profile,
+.quote__box2__profile,
+.quote__box3__profile,
+.quote,
+.footer__about,
+.footer__about__location,
+.footer__about__number1,
+.footer__about__number2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.nav,
+.content,
+.stay,
+.quote {
     padding: 3rem 5rem;
 }
 
+.nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav__link ul {
-    display: flex;
     list-style: none;
 }
 
@@ -33,10 +55,16 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
 
 /* intro part */
 
-.intro {
-    display: flex;
-    flex-direction: column;
+.intro,
+.content,
+.stay,
+.quote,
+.get {
     margin-top: 10rem;
+}
+
+.intro {
+    flex-direction: column;
 }
 
 .intro__img,
@@ -48,18 +76,11 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
 
 /* content part */
 
-.content {
-    padding: 3rem 5rem;
-    margin-top: 10rem;
-}
-
 .content__row1 {
-    display: flex;
     text-align: center;
 }
 
 .content__row2 {
-    display: flex;
     text-align: center;
     margin-top: 3.5rem;
 }
@@ -72,14 +93,7 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
 
 /* stay part */
 
-.stay {
-    display: flex;
-    margin-top: 10rem;
-    padding: 3rem 5rem;
-}
-
 .stay__content {
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -89,17 +103,16 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
     width: 60%;
 }
 
-.stay__content p {
+.stay__content p,
+.get h3,
+.get__input {
     margin-top: 1rem;
 }
 
 /* quote part */
 
 .quote {
-    display: flex;
     justify-content: space-between;
-    margin-top: 10rem;
-    padding: 3rem 5rem;
     background-image: url(images/bg-quotes.png);
     background-repeat: no-repeat;
     background-position-x: 50px;
@@ -122,7 +135,6 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
 .quote__box1__profile,
 .quote__box2__profile,
 .quote__box3__profile {
-    display: flex;
     margin-top: 1.5rem;
 }
 
@@ -137,7 +149,6 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
 .get {
     width: 70%;
     margin: 0 auto;
-    margin-top: 10rem;
     padding: 5rem;
     border-radius: 10px;
     position: relative;
@@ -147,14 +158,6 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
 
 .get h1,h3 {
     color: #fff;
-}
-
-.get h3 {
-    margin-top: 1rem;
-}
-
-.get__input {
-    margin-top: 1rem;
 }
 
 .get__input input {
@@ -182,18 +185,11 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
 }
 
 .footer__about {
-    display: flex;
     justify-content: space-between;
 }
 
 .footer__about__location {
-    display: flex;
     width: 30%;
-}
-
-.footer__about__number1,
-.footer__about__number2 {
-    display: flex;
 }
 
 /* .footer__about__location p {
