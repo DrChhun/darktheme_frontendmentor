@@ -8,7 +8,7 @@ body {
     background-color: hsl(218, 28%, 13%);
 }
 
-h1,h2,h3,h4,h5,h6,p,a,button,input {
+h1,h2,h3,h4,h5,h6,p,a,button,input,.input__button p {
     color: white;
     font-family: 'Kumbh Sans', sans-serif;
 }
@@ -51,6 +51,11 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
     text-decoration: none;
     color: white;
     margin-left: 50px;
+    transition: 300ms;
+}
+
+.nav__link ul a:hover {
+    color: hsl(176, 68%, 64%);
 }
 
 /* intro part */
@@ -185,6 +190,7 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
 }
 
 .footer__about {
+    margin-top: 2rem;
     justify-content: space-between;
 }
 
@@ -192,6 +198,105 @@ h1,h2,h3,h4,h5,h6,p,a,button,input {
     width: 30%;
 }
 
+.footer__about__location img {
+    height: 25px;
+    margin-right: 1.5rem;
+}
+
+.intro__button p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.intro__button {
+    border-radius: 25px;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    background-color: hsl(176, 68%, 64%);
+    transition: 350ms ease;
+}
+
+.intro__button:hover {
+    background-color: hsl(198, 60%, 50%);
+}
+
 /* .footer__about__location p {
     width: 50%;
 } */
+
+@media (max-width: 900px) {
+
+    .nav {
+        padding: 3rem 1.5rem;
+    }
+
+    .nav__logo img{
+        height: 25px;
+    }
+
+    .intro__img img,
+    .stay__img img{
+        width: 300px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .intro h1,p,button {
+        text-align: center;
+    }
+
+    .stay {
+        display: block;
+    }
+
+    .content__row1,
+    .content__row2 {
+        display: block;
+    }
+
+    .content p {
+        width: 100%;
+    }
+
+    .stay__content h1{
+        width: 100%;
+    }
+
+    .stay__content p {
+        text-align: left;
+    }
+
+    .quote {
+        display: block;
+    }
+
+    .quote__box1,
+    .quote__box2,
+    .quote__box3 {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .get {
+        padding: 2.5rem;
+    }
+
+    .get__input input,
+    .get__input button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .footer__about {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__about__location {
+        width: 100%;
+    }
+
+    .footer__about__location img {
+        margin: 0;
+    }
+}
